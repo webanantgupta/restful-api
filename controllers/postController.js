@@ -25,6 +25,7 @@ const updatePost = async (req,res) => {
     // res.send('update post working')
    try {
     let userId = req.user;
+    
     let postId = req.params._id;
 
     let post = await postSchema.findById(postId);
